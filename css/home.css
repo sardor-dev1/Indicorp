@@ -1,0 +1,168 @@
+#home {
+    background-color: rgb(243,243,243);
+    background-image: url(../images/home/cover.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    position: relative;
+    padding-bottom: 200px;
+    padding-top: 82px;
+
+}
+
+.home__wrapp {
+    padding-top: 104px;
+}
+
+.home__about-wrapp {
+    padding-bottom: 100px;
+}
+
+.home__tittle {
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 80px; 
+    letter-spacing: 0.2px;
+    width: 100%;
+    max-width: 509px;
+}
+
+.home__text {
+    color: var(--text-color);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px; 
+    letter-spacing: 0.2px;
+    padding: 35px 0;
+}
+
+.home__btn-wrapp {
+    display: flex;
+    align-self: center;
+    gap: 10px;
+}
+
+.home__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 36px;
+    border-radius: 37px;
+    border: 2px solid var(--secondColor);
+    color: var(--secondColor);
+    transition: 0.4s;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    background-color: transparent;
+}
+
+.home__btn:hover {
+    background: var(--hoverColor);
+    color: var(--primaryColor);
+    border-color:  var(--hoverColor);
+}
+
+/* --- Home cards --- */
+.home__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    
+}
+
+
+.cards__item {
+    width: 328px;
+    background-color: var(--primaryColor);
+    transition: 0.3s;
+}
+
+.cards__item:hover {
+    transform: scale(1.08);
+}
+
+.image {
+    color: black;
+}
+
+.cards__item > div {
+    padding: 35px 15px 0 40px;
+    min-height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.4s;
+}
+
+.cards__item > div:hover {
+    background-color: var(--secondColor);
+    color: var(--primaryColor);
+}
+
+.cards__item > div:hover svg path{
+    fill: var(--primaryColor);
+}
+
+.cards__item > div:hover p {
+    color: var(--primaryColor);
+}
+
+.cards__item__tittle {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px; 
+    letter-spacing: 0.1px;
+    padding: 10px 0;
+}
+
+.cards__item__text {
+    color: var(--text-color);
+    max-width: 240px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px; 
+    letter-spacing: 0.2px;
+}
+
+@media (max-width:900px) {
+    
+    .home__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    #home {
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media (max-width:500px) {
+    .home__about-wrapp {
+        text-align: center;
+    }
+
+    .home__btn-wrapp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #home {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .cards__item {
+        max-width: 260px;
+    }
+
+    .home__tittle {
+        font-size: 42px;
+    }
+}
